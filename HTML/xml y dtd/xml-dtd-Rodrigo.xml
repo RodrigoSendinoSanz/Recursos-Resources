@@ -1,0 +1,138 @@
+
+<!-- DTD -->
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (libro+,revista+,periodico+)>
+
+  <!-- Libro -->
+
+    <!ELEMENT libro (titulo,indice,capitulos,contenidolibro)>
+       <!ATTLIST libro id CDATA #REQUIRED>
+
+    <!ELEMENT titulo (#PCDATA)>
+        <!ATTLIST titulo tipo_de_clase_libro (N|I|D) “N” #REQUIRED>
+    
+    <!ELEMENT indice (capitulos+)>
+    <!ELEMENT capitulos (numero,contenido)>
+    <!ELEMENT numero (#PCDATA)>
+    <!ELEMENT contenido (#PCDATA)>
+
+    <!ELEMENT contenidolibro (#PCDATA)>
+
+  <!-- Revista -->
+
+  <!ELEMENT revista (titulo,nderevista,indice,n_paginastotal)>
+      <!ATTLIST revista id CDATA #REQUIRED>
+
+  <!ELEMENT titulo (#PCDATA)>
+      <!ATTLIST titulo tipo_de_clase_revista  (IN|CO|C|I|X) “X” #REQUIRED>
+
+  <!ELEMENT nderevista (#PCDATA)>
+
+  <!ELEMENT indice (seccion+)>
+  <!ELEMENT seccion (n_depaginas,contenidorevista)>
+  <!ELEMENT contenidorevista (#PCDATA)>
+  <!ELEMENT n_depaginas (#PCDATA)>
+
+  <!ELEMENT n_depaginastotal (#PCDATA)>
+
+    <!-- Periodico -->
+
+    <!ELEMENT periodico (fecha,indice,seccion,informaciongeneral)>
+
+       <!ATTLIST periodico id CDATA #REQUIRED>
+      
+       <!ATTLIST periodico tipo_de_clase_periodico (N|I) “N” #REQUIRED>
+
+  
+    <!ELEMENT fecha (#PCDATA)>
+
+    
+    <!ELEMENT indice (seccion+)>
+
+    <!ELEMENT seccion (informacion,articulos+)>
+
+       <!ATTLIST seccion tipo_de_seccion (E|O|D|N|I) “E”>
+
+    <!ELEMENT informacion (#PCDATA)>
+
+    
+    <!ELEMENT articulos (articulo,autor)>
+    <!ELEMENT articulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+  
+    <!ELEMENT informaciongeneral (#PCDATA)>
+
+
+
+]>
+
+<!-- XML -->
+
+<biblioteca>
+
+  <libro id="L4534">
+
+    <titulo tipo_de_clase_libro="N">
+      La sombra
+    </titulo>
+      <indice>
+        <capitulos>
+          <numero>
+            3
+          </numero>
+          <contenido>
+              Lorem ipsum dolor sit amet consectetur, 
+              adipisicing elit. Architecto nemo quisquam autem inventore 
+              voluptates doloribus minima maiores expedita neque. 
+              Libero ea modi iure dolore.
+          </contenido>
+      </capitulos>
+      </indice>
+
+    <contenidolibro>La sombra es un libro pulicado por Josef Estimburger y bla bla bla bla</contenidolibro>
+
+  </libro>
+
+  <revista id="R4534">
+
+    <titulo tipo_de_clase_revista="C">
+      Mas que coches
+    </titulo>
+
+    <nderevista>123</nderevista>
+    
+    <indice>
+      <seccion>
+        <contenidorevista>Lorem ipsum dolor sit amet consectetur adipisicing.</contenidorevista>
+        <n_depaginas>3</n_depaginas>
+      </seccion>
+    </indice>
+
+    <n_depaginastotal>23</n_depaginastotal>
+
+  </revista>
+    
+  <periodico id="P4534" tipo_de_clase_periodico="I">
+
+    <fecha>12/07/2021</fecha>
+    <indice>
+      <seccion tipo_de_seccion="E">
+        
+        <informacion>Las cripomonedas fluctuan a causa de las acciones sociales</informacion>
+        
+        <articulos>
+          <articulo>El precio del bitcoin ha cadido a causa de las nuevas declareaciones de Elon Musk sobre la moneda</articulo>
+          <autor>Juan Rodriguez</autor>
+        </articulos>
+        
+      </seccion>
+
+    </indice>
+   
+    <informaciongeneral>Tips de economia y formas incipientes para conecer la situacion actual de mercado</informaciongeneral>
+
+  </periodico>
+
+</biblioteca>

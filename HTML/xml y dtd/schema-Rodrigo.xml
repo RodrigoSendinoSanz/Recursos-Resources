@@ -1,0 +1,105 @@
+<!-- SCHEMA -->
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="biblioteca">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="libro">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="titulo">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="tipo_de_clase_libro"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="indice">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="capitulos">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:float" name="numero"/>
+                          <xs:element type="xs:string" name="contenido"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="contenidolibro"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="revista">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="titulo">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="tipo_de_clase_revista"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:byte" name="nderevista"/>
+              <xs:element name="indice">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="seccion">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="contenidorevista"/>
+                          <xs:element type="xs:byte" name="n_depaginas"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:byte" name="n_depaginastotal"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="periodico">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="fecha"/>
+              <xs:element name="indice">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="seccion">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="informacion"/>
+                          <xs:element name="articulos">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="articulo"/>
+                                <xs:element type="xs:string" name="autor"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="tipo_de_seccion"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="informaciongeneral"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id"/>
+            <xs:attribute type="xs:string" name="tipo_de_clase_periodico"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,25 @@
+
+*{
+    font-weight: 100;
+    font-size:40px;
+}
+body{
+    padding-top: 100px;
+} 
+
+.caja-Fixed{
+    background: red;
+    position:fixed; 
+
+    opacity: .3;
+    margin: -100px
+
+}
+.caja-Sticky{
+    background: green;
+    position: sticky;
+    opacity: .3;
+    /* Aumentad o disminuir el top afecta a las visualizacion del elemento sticky*/
+    top:0;
+
+}

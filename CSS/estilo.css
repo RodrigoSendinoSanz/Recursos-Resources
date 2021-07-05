@@ -1,0 +1,263 @@
+/* selector{
+    propiedad: valor
+} */ 
+
+/* CSS Selector:
+- Universal *
+- de tipo h1 , button, p ,input
+- clase asignar clase  <elemento class="nombre"> .nombre
+- id #id-del-elemento
+- por atributo [variable ="valor"] <h2 variable ="valor">
+- descendiente  contiente dentro de ambos: h2 p  .h2-class p
+- pseudo-clases  
+ */
+
+h1{
+    color: red;
+}
+.verde{
+    color: rgb(7, 243, 58);
+}
+#element{
+ color : rgb(12, 53, 39);
+}
+[rancio="si"]{
+    color: brown;
+
+}
+h2 p{
+    color:blue;
+}
+b:hover{
+    color: gray;
+}
+/* Jerearquias:
+1- !important
+2- estilos en linea
+3- Identificadores
+4- clases
+5- pseudo-clases
+6- atributos
+7- elementos
+8- pseudo-elementos
+*/
+
+/* style="color: green" */
+h3{
+    color:goldenrod !important;
+}
+#colorblue{
+    color: blue;
+}
+.colorred{
+    color: red;
+}
+h3{
+    color:bisque;
+}
+
+.contact-form__input--active{
+    color:blue;
+}
+
+
+.contact-form__input:first-child{
+    color:red;
+}
+/* Unidades de medidas relativas */
+.unidades-form{
+    font-size: 20px;
+    background-color: #000;
+    width: 100vw;/* si fuese 50 seria la mitad el la pantalla  tambien se pueden hacer % pero acondicionado a la caja*/
+/*     height: 100vw; */
+}
+
+.unidades-form__h4{
+    font-size: 1em; /* 1em = font size de arriba */
+}
+
+/* *{
+    padding: 0px;
+    margin: 0px;
+}
+ */
+
+ .unidades-form__h5{
+     font-size: 2em;
+     font-family: 'Yatra One', cursive,sans-serif;
+     line-height: 1.9;
+     font-weight: 400;
+     font-stretch: normal;
+     font-variant: small-caps;
+ }
+
+/*
+Todo lo que se pone dentro se aplica a todos los elementos de la pagina
+texto, div etc
+*{
+
+ } 
+ */
+
+
+h2{
+     display: inline;
+     /* los elementos en linea "h2" no se les puede dar height/width pero el "p" si */
+   }
+
+h5{
+
+    background-color: red;
+    display: inline-block;
+             /*  1 top 2 right 3 bottom 4 left 
+                1 top y button 2 left y right
+                1 top 2 left y right 3 button 
+             */
+    padding: 20px 30px;
+    /* Si no tiene border box se suma */
+    height: 100px;
+    width: 100px;
+    box-sizing: content-box;
+/*  padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+ */
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 10px;
+    /*  solid dashed double groove inset outset ridge*/
+    border: 4px solid blue;
+        /* Para hacer el efecto mas intenso copias y pegas despues de la coma */
+    box-shadow: 1px 2px 15px 0 #000;
+    text-shadow: 2px 2px 7px #FFFF,4px 2px 8px #453454;
+    transform: rotate(-45deg);
+}
+/* Si quiseria poner las mismas cualidades a las 2 se pondria .caja1, .caja2
+
+alt+shift para editar varias lineas a la vez*/
+.caja1{
+    height: 200px;
+    width: 200px;
+    background: green;
+    margin:auto;
+    /* Border se mete dentro y outline va fuera */
+    border: 10px solid blue;
+/*   para remarcar  outline: 10px solid blue; */
+}
+.caja2{
+
+    height: 200px;
+    width: 200px;
+    background: blue; 
+    margin:auto;
+
+}
+
+#outline{
+    height: 200px;
+    width: 200px;
+    background: yellow; 
+    display: inline-block;
+}
+.cajaA1{
+    outline: 5px solid #64047c;
+}
+.cajaA2{
+    outline: 5px solid #64047c;
+    /* Sirve para ver la posicion exacta */
+    position: relative;
+}
+.cajaA2{
+    border: 5px solid #64047c;
+
+}
+.cajaA4{
+    outline: 5px solid #64047c;
+}
+
+.cajaP1{
+    background-color: orange;
+
+}
+.cajaP2{
+    background-color: green;
+    position: relative;
+    /* Puedes mover la posicion con las propiedades top 20px; bottom,left y right(top y left tienen propiedad prioritaria) */
+    top: 60px;
+    left: 20px;
+    z-index: 100;
+}
+
+.cajaP3{
+    background-color: lightblue;
+    position: relative;
+    z-index: 10;
+}
+.cajaP4{
+    background-color: yellow;
+}
+
+#CajaPosition{
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+
+}
+
+h7{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.contenedor{
+    width: 300px;
+    height: 300px;
+    background:blue;
+    margin: 40px;
+    position: relative;
+
+}
+.hijo{
+    background-color:orange;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    z-index: -1;/* Forma para poner al hijo por debajo del padre */
+}
+/* Con position absolute se ajusta el contenido al contenido */
+.cajaAb1{
+    background-color: orange;
+
+}
+.cajaAb2{
+    background-color: green;
+    position: absolute;
+    opacity: .2;
+}
+
+.cajaAb3{
+    background-color: lightblue;
+
+}
+.cajaAb4{
+    background-color: navajowhite;
+
+}
+
+#CajaAbsolute{
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+/*   Centrar:  margin: 50px auto; */
+}
+

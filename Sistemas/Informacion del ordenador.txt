@@ -1,0 +1,13 @@
+Ver licencia:
+
+wmic path softwarelicensingservice get OA3xOriginalProductKey
+
+Ver infromacion:
+
+msinfo32 (Ventana)
+
+systeminfo
+
+GODMODE:
+Crear una carpeta y nombrarla:
+GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}.
