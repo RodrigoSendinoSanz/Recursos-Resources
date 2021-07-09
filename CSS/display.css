@@ -1,0 +1,120 @@
+p{
+    font: 20px;
+}
+
+b{
+    width: 150px;
+    height: 150px;
+    margin : 20px;
+    border: 10px solid red;
+    background-color: yellow;
+    display: inline;
+    /* En inline no se pueden modificar las dimensiones */
+/*
+Default display: block
+        display: inline-block; se pone en línea
+        display: block; se pone en bloque
+        display: none; se oculta
+        display: inline; se pone en línea pero no se pueden modificar ni el ancho nu el alto
+
+*/
+}
+.scroll{
+    margin: 10px ;
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    background-color: grey;
+    overflow: auto;
+/*      overflow-x: scroll;
+    overflow-y: hidden; */
+/* Por defecto es visible 
+    overflow: auto pone scroll detectando en caso en que el contenido sobrepase la caja
+    overflow: hidden; se oculta el contenido
+    overflow: scroll; se oculta el contenido y se pone scroll detectando en caso en que el contenido sobrepase la caja
+    overflow-x y overflow-y
+    */
+}
+.overflow{
+    margin: 10px ;
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    background-color: grey;
+    overflow: hidden;
+/*     overflow-x: scroll;
+    overflow-y: hidden; */
+/* Por defecto es visible 
+    overflow: auto pone scroll detectando en caso en que el contenido sobrepase la caja
+    overflow: hidden; se oculta el contenido
+    overflow: scroll; se oculta el contenido y se pone scroll detectando en caso en que el contenido sobrepase la caja
+    overflow-x y overflow-y
+    */
+}
+
+.efecto{
+    width: 600px;
+    position: relative;
+    top: 50px;
+    outline : 5px solid black;
+    transition: all 1.2s;
+} 
+.overflow:hover  > .efecto{
+
+        width: 380px;
+        position: relative;
+        top: 0px;
+        outline : 7px solid white;
+
+}
+
+/* img{
+    width: 700px;
+    position: relative;
+    top: 50px;
+    outline : 2px solid black;
+} 
+img:hover{
+
+        width: 700px;
+        position: relative;
+        top: 0px;
+        outline : 2px solid black;
+
+} */
+
+/* FLOAT: left right none inherit */
+.cont div{
+    float: right;
+/*   no serviria 
+    display: inline-block;
+    width: 45%; */
+}
+
+.primario{
+    background : #F00;
+    width: 70%;
+}
+
+.secundario{
+    background : #0F0;
+    width: 30%;
+}
+
+.contimg{
+    margin: auto;
+    background: grey;
+    width: 50%;
+    padding: 20px;
+}
+
+.contimg img{
+    width: 50%;
+    border: none;
+    margin-right: 18px;
+}
+
+.contimg p{
+    float: right;
+
+}

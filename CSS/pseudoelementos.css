@@ -1,0 +1,60 @@
+/* first line y first letter  solo funcionan en los elementos en bloque en los inline no*/
+div{
+    padding: 20px;
+/*   Con esto no funcionaria  display: inline; */
+}
+
+
+.firstline::first-line{
+    color : blue;
+    font-size : 24px;
+
+}
+
+.firstletter::first-letter{
+    color : blue;
+    font-size : 10em;
+}
+
+form{
+    margin: 100px auto;
+    display: block;
+    background-color: #555;
+    padding: 70px;
+    width:50%;
+}
+
+input{
+    padding: 6px;
+    width: 100%;
+}
+
+input::placeholder{
+    color: #bd1577;
+    background-color: yellow
+}
+
+input::selection{
+    color: #eb0f8f;
+    background-color: #8f2f2f
+}
+
+p::selection{
+    color: #eb0f8f;
+    background-color: #8f2f2f
+}
+
+ul li::marker {
+    color: red;
+    font-size: 1.5em;
+}
+
+b::before{
+    content: "Contenido protegido";
+}
+
+b::after{
+    content: "Contenido protegido 2";
+    color : red;
+    background-color: yellow;
+}
