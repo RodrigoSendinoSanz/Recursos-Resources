@@ -1,0 +1,117 @@
+.flex-container{
+    display: flex;
+}
+/* Flexbox iguala el tamaño de los contenidos ajustandolos y respetando sus atributos */
+.flex-item{
+    background-color: #248;
+    color: #FFF;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.flex-container2{
+    display: flex;
+    /* Para cambiar la direcion */
+    /* flex-direction: column; */
+    flex-direction: row-reverse;
+    /* Mueve las cajas matneriendo su tamaño */
+    flex-wrap: wrap;
+    /* Wrap reverse las cajas se mueven hacia arriba  */
+     /*  Se puede abrebiar*/
+    /*      flex-flow: column wrap; */
+    /* Justify centrar contenido */
+    justify-content: center;/* :space-around como margin auto */
+    /* space-between le da un margen por defecto a todas las cajas
+     Para que todas tengan el el mismo margen space-evenly*/
+    /* Centrar verticalmente */
+      align-items: center;/* flex-end, flex-start, strech (por defecto) estira las cajas*/
+      /* align-content: baseline; */
+    }
+.flex-item2{
+    background-color: #248;
+    color: #FFF;
+    margin: 5px;
+    height: 120px;
+    min-width: 120px;
+    text-align: center;
+/*     flex: 1; */
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.flex-container3{
+    display: flex;
+    justify-content: space-evenly;
+/*     height: 100vh */;
+    }
+.flex-item3{
+    background-color: #248;
+    color: #FFF;
+    margin: 5px;
+    height: 120px;
+    min-width: 120px;
+    text-align: center;
+    /* El margin actua de manera inversa */
+    /* margin-top: autor; y margin-bottom: auto; centra la caja  en una direccion
+    si no con margin auto lo centra*/
+}
+
+.green2{
+    background-color: green;
+    align-self: baseline;
+}
+.red2{
+    background-color: red;
+}
+
+.flex-container4{
+    display: flex;
+    flex-wrap: wrap;
+/*     height: 100vh; */
+    }
+.flex-item4{
+    background-color: #248;
+    color: #FFF;
+    margin: 5px;
+    min-width: 150px;
+    text-align: center;
+    height: 100px;
+    flex-grow: 1; /* El grow se aplica a todos los items */
+    width: 300px; 
+    /* Ya que pasar un parametro para que funcione */
+    flex: 1;
+    /* El margin actua de manera inversa */
+    /* margin-top: autor; y margin-bottom: auto; centra la caja  en una direccion
+    si no con margin auto lo centra*/
+}
+
+.green3{
+    background-color: green;
+    /* Se divide los pixeles de espacio en blanco cuanto mas tiene mas ocupa*/
+/*     flex-grow: 2; */
+/*     width: 200px; */
+    /* tiene mas prioridad que el width*/
+/*     flex-basis: 300px; */
+    /* Cede espacio para dividirlo en el resto de cajas  tambien puede ceder la mitad .5*/
+    /* Si pones 0 no cede espacio */
+/*     flex-shrink: 2; */
+    /*  Puedes agrupar las con flex: 1(Flexgrow) 0(flex-shink) 350px(flex-basis)*/
+    flex: 1 0 350px;
+    /* Ordena en el eje que apunta el main axis (eje vertical hacia la derecha)
+       a mayor numero mayor prioridad de ordenacion
+    */
+    order: 4;
+
+
+}
+.red3{
+    background-color: red;
+/*     flex-grow: 1; */
+}

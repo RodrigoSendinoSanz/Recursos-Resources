@@ -1,0 +1,20 @@
+div{
+   filter: brightness(50%) contrast(100%) grayscale(0%) hue-rotate(180deg) invert(100%) saturate(100%) sepia(100%);
+                             /* Blur desenfoque
+                              brightness(0.1 hasta 1, normal y mas sobrexposicion
+                              contrast (0 nada 1 normal 2 eñ doble.. o porcentaje)
+                              
+                              
+                              */
+
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.png{
+    width: 80%;
+    filter: drop-shadow(0px 0px 10px #444);
+}

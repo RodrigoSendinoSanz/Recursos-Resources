@@ -1,0 +1,118 @@
+.caja {
+    width: 300px;
+    height: 400px;
+    display: flex;
+}
+.caja2 {
+    width: 300px;
+    height: 360px;
+    display: flex;
+}
+.caja3 {
+    width: 900px;
+    height: 600px;
+    display: flex;
+}
+.caja4 {
+    width: 900px;
+    height: 600px;
+    display: flex;
+}
+.caja5 {
+    width: 900px;
+    height: 600px;
+    display: flex;
+}
+
+.caja img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #eb0e0e;
+    /* Valor contain hace que la resulucion se ajuste al contenedor  con bordes*/
+    object-fit: contain;
+
+}
+
+.caja2 img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #eb0e0e;
+    /* Se ajusta al contenido sin dejar bordes  */
+    object-fit: cover;
+
+}
+
+.caja3 img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #eb0e0e;
+    /* Agranda o disminuye la imagen a las dimensiones segun su caja*/
+    object-fit: none;
+}
+
+.caja4 img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #eb0e0e;
+    /* Compara las resoluciones y se queda con la mas pequeña contain o none*/
+    object-fit: scale-down;
+}
+
+.caja5 img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #eb0e0e;
+    object-fit: cover;
+    /* Se muestra mas de el lado que eljas top/button left/right y en canidades ejemplo 1em*/
+    object-position: left;
+
+}
+
+
+
+
+.caja6 {
+    width: 900px;
+    height: 600px;
+    display: flex;
+    border: 5px solid red;
+    background-color: pink;
+    cursor: progress;
+}
+/*  Lisa de cursores
+.alias {cursor: alias;}
+.all-scroll {cursor: all-scroll;}
+.auto {cursor: auto;}
+.cell {cursor: cell;}
+.context-menu {cursor: context-menu;}
+.col-resize {cursor: col-resize;}
+.copy {cursor: copy;}
+.crosshair {cursor: crosshair;}
+.default {cursor: default;}
+.e-resize {cursor: e-resize;}
+.ew-resize {cursor: ew-resize;}
+.grab {cursor: -webkit-grab; cursor: grab;}
+.grabbing {cursor: -webkit-grabbing; cursor: grabbing;}
+.help {cursor: help;}
+.move {cursor: move;}
+.n-resize {cursor: n-resize;}
+.ne-resize {cursor: ne-resize;}
+.nesw-resize {cursor: nesw-resize;}
+.ns-resize {cursor: ns-resize;}
+.nw-resize {cursor: nw-resize;}
+.nwse-resize {cursor: nwse-resize;}
+.no-drop {cursor: no-drop;}
+.none {cursor: none;}
+.not-allowed {cursor: not-allowed;}
+.pointer {cursor: pointer;}
+.progress {cursor: progress;}
+.row-resize {cursor: row-resize;}
+.s-resize {cursor: s-resize;}
+.se-resize {cursor: se-resize;}
+.sw-resize {cursor: sw-resize;}
+.text {cursor: text;}
+.url {cursor: url(myBall.cur),auto;}
+.w-resize {cursor: w-resize;}
+.wait {cursor: wait;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;} */

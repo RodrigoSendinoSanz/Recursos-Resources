@@ -1,0 +1,22 @@
+.container{
+    padding: 30px ;
+    background: #86f;
+/*     border: 2px solid #f00; */
+/*     width: 350px; */
+    height: 400px;
+    margin: 40px 0;
+    background-image: url("https://www.teahub.io/photos/full/232-2326072_fondos-de-pantalla-para-pc-de-alta-resolucion.jpg");
+    background-size: cover; /*  100% /Escalar:100% 300px/ cover /contain*/
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Efecto guay */
+
+
+  /*   background-clip: border-box;/* Se empieza a enseñar desde border-box/ padding-box / content-box 
+    background-origin: padding-box;/* Se origina desde border-box(elpadding lo cuenta)/ padding-box / content-box 
+    background-size: 100px;
+    background-position: left top;/* Posicion de la imagen 1 hotizontal 2 vertical
+     */
+}
+div{
+  color: rgb(112, 111, 111);
+}

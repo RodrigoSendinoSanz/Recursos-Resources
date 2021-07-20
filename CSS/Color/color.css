@@ -1,0 +1,26 @@
+/* Colores:
+    - Nombre del color red
+    - Color hexadecimal #ff0000 o pones 3 unidades o 6 unidades para el color
+        ej: 3 Valores: #fff 4 Valores: #ffff (la ultima f es opacidad) 
+            con 6 unidades pones #ffffff y con 8 unidades pones #ffffffff siendo las 2 ultimas la opacidad
+    - Color RGB (red, green, blue) rgb(255, 0, 0) rojo verde y azul 0,0,0 negro
+    - Color RGBA rgba(255, 0, 0,.5)  baja la opacidad va del 0 al 1
+*/
+.caja{
+    margin: 45px;
+    width: 200px;
+    height: 300px;
+    border: 5px solid #f00;
+}
+
+.caja:active{
+    background-color: #e9967a;
+}
+
+.caja2{
+    margin: 45px;
+    width: 200px;
+    height: 300px;
+    border: 5px solid #ff0000;
+    background-color: rgba(255, 0, 0,.5);
+}

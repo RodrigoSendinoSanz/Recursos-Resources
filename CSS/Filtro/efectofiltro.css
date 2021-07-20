@@ -1,0 +1,42 @@
+.container{
+filter: contrast(30);
+background: #fff;
+}
+
+.caja{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background:red;
+    margin: 40px;
+    border-radius: 50%;
+    filter: blur(20px);
+}
+.caja:first-child{
+    animation: trasladar 3s alternate infinite;
+}
+@keyframes trasladar{
+    0%{
+        transform: translate(0);
+    }100%{
+        transform: translate(160px);
+    }
+}
+
+/* direction: rtl; para cmabiar de direcion al texto
+    letter-spacing: -0.1em; para cambiar el espacio entre letras
+    scroll-behavior: smooth; para bajar despacio y fluido el scroll para enlaces dentro de una misma pagina
+    text-align: right; para cambiar la posicion del textoç
+    text-shadow: 0 0 1em #000; para cambiar el color del texto
+    text-transform: uppercase; para cambiar la forma del texto
+    font-weight: bold; para cambiar el peso del texto
+    user-select: none; para que no se puedan seleccionar los elementos
+    https://www.w3schools.com/cssref/css_selectors.asp
+    :valid (con border por ejemplo)
+    grid-column-gap: 10px; para cambiar el espacio entre columnas
+    grid-row-gap: 10px; para cambiar el espacio entre filas
+    gap: 10px; para cambiar el espacio entre elementos
+
+    -moz-color: red; para cambiar el color en Mozilla (Firefox)
+    -webkit-color: red; para cambiar el color en webkit (Chrome)
+    */

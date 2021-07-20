@@ -1,0 +1,33 @@
+.container{
+    background: #86f;
+    padding: 20px 5px;
+}
+.caja{
+    background: #025;
+    height:80px;
+    width:80px;
+    margin: 20px;
+    position: relative;
+    animation-name: desplazarse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;/* Numero o infinite */
+    animation-direction: normal;/* normal/reverse/alternate/alternate-reverse*/
+    animation-fill-mode: forwards;/* none/forwards para que se quede como el ultimo frame/backwards/both*/
+    /* backwards conserva los valores de estilo establecidos por el primer fotograma clave */
+    /* both empieca con la propiedad del principio de la animacion */
+    
+    /* Se puede ver en el navegador */
+   /*  animation-timing-function: linear; *//* linear, ease, ease-in, ease-out, ease-in-out */
+    animation-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1); /* Curva Cuadratic bezier x,y,x,y*/;   
+}
+
+@keyframes desplazarse{
+    /* from */ 0%{
+        left:0;
+    }/* to */50%{
+        background: red;
+    }100%{
+        left:80%;
+        background-color: green;
+    }
+}

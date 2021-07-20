@@ -1,0 +1,22 @@
+:root{
+    --color-rojo: #f00;
+}
+
+/* p{ asi solo estaria disponible en los elementos p
+    --color-rojo : #f00;
+    tambien se podria redefinir la variable pero solo acuaria dentro del elemento la redefinicion
+} */
+div{
+    padding: 30px;
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+}
+
+.container{
+    background: var(--color-rojo)
+}
+
+.container2{
+    background: #01f;
+}

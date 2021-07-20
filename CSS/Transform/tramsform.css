@@ -1,0 +1,30 @@
+.container{
+    background: #86f;
+    padding: 20px 5px;
+}
+.caja{
+    background: #025;
+    height:80px;
+    width:80px;
+    margin: 20px;
+    display: flex;
+    color: #fff;
+    clip-path: circle(75%);
+    transition: transform 3s;
+    transition: clip-path 1s;
+
+    /* Las animaciones se hacen con: transform: translate()
+    Crea una nueva capa y no mueve el layout */
+
+    /* transform: scale(2);  *//* mover translate() / translateY()/translateX() */
+                        /* scale() escala dimensiones scaleX/scaleY()*/
+}
+.caja:hover{
+   /*  transform: scaleY(2) translate(12px); */
+   clip-path: circle(25%);
+/*    transform: skew(20deg);  mover lados*/
+}
+
+b{
+    margin: auto;
+}
