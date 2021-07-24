@@ -1,6 +1,6 @@
 # PHP
 
-Nociones básicas PHP y estructura del crud - PHP basics and crud structure
+Nociones básicas PHP y estructura del CRUD - PHP basics and crud structure
 
   ## REQUISITOS - REQUIREMENTS
 
