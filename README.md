@@ -10,6 +10,7 @@
      - [GIT](#GIT)
      - [HTML](#HTML)
      - [JAVA](#JAVA)
+     - [PHP](#PHP)
      - [JS](#JS)
      - [SISTEMAS](#SISTEMAS)  
      - [SQL](#SQL)
@@ -34,6 +35,9 @@ HTML and XML and DTD basics
 Conceptos con ejemplos de arrays cadenas colecciones objetos y estructuras alternativas y repetitivas (Bucles)
 ----------
 Concepts with examples of arrays chains collections objects and alternative and repetitive structures (Loops)
+
+## <a href="https://github.com/RodrigoSendinoSanz/Recursos-Resources/tree/main/PHP">PHP</a>
+Conceptos y recursos de PHP
 
 ## <a href="https://github.com/RodrigoSendinoSanz/Recursos-Resources/tree/main/JS">JS</a>
 Conceptos y recursos de JavaScript
