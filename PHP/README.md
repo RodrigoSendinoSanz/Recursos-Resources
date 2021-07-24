@@ -12,6 +12,7 @@ Nociones básicas PHP y estructura del CRUD - PHP basics and crud structure
 - Pon la carpeta PHP en la ruta **C:\xampp\htdocs**
 - Inicia el servidor **Apache** y el servidor **MySQL** en xampp
 - En un navegador accede a la ruta **http://localhost/PHP/** para acceder a los proyectos y accede a **http://localhost/phpmyadmin/** para ver la base de datos
+
 [EN]
 - Put the PHP folder in the path **C:\xampp\htdocs**
 - Start the **Apache** server and **MySQL** server in xampp
