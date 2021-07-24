@@ -7,7 +7,7 @@ Nociones básicas PHP y estructura del crud - PHP basics and crud structure
 > **Note:** Se quiere utilizar xampp - You need to use xampp.
 
 
-##Pasos-Steps
+#Pasos-Steps
 
 - Pon la carpeta PHP en la ruta **C:\xampp\htdocs**
 - Inicia el servidor **Apache** y el servidor **MySQL** en xampp
