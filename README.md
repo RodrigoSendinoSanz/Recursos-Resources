@@ -38,6 +38,8 @@ Concepts with examples of arrays chains collections objects and alternative and 
 
 ## <a href="https://github.com/RodrigoSendinoSanz/Recursos-Resources/tree/main/PHP">PHP</a>
 Conceptos y recursos de PHP
+----------
+PHP concepts and resources
 
 ## <a href="https://github.com/RodrigoSendinoSanz/Recursos-Resources/tree/main/JS">JS</a>
 Conceptos y recursos de JavaScript
