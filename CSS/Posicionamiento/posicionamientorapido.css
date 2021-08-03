@@ -1,0 +1,25 @@
+.centrar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*  <article class="flex">
+        <div> CENTRADO</div>
+    </article> */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*  <article class="grid">
+        <div> CENTRADO</div>
+    </article> */
+
+.grid{
+    display: grid;
+    place-items: center;
+}
