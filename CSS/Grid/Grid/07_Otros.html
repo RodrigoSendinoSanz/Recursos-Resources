@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Estructura v2</title>
+		<style type="text/css">
+			.grid {
+				  display: grid;
+				  grid-template-columns:1fr 10em 10em 1fr;
+				  grid-template-rows:5em 10em 5em;
+				  /*********************************/
+				  grid-template-areas:"h  h  h  h"
+				                      "l  .  c  r"
+				                      "l  f  f  f";
+				  /* . left empty */
+				  /*********************************/
+				  grid-gap:.5em;
+				  
+				  margin: 1em auto;
+				  border: 1px dashed #777;
+				  width:31em;
+				}
+
+				/*********************************/
+				.h{grid-area: h;}
+				.l{grid-area: l;}
+				.c{grid-area: c;}
+				.r{grid-area: r;}
+				.f{grid-area: f;}
+				/*********************************/
+
+
+				.item {
+				  border: 1px solid #000; 
+				  border-radius:10px;
+				  background-color:#3E989B;
+				  background-color:var(--color);
+				  display:grid;
+				}
+
+				.item p {
+				  justify-self: center;
+				  align-self: center;
+				  color:white;
+				}
+
+
+
+
+				/*unimportant stuff*/
+				body {
+				  font-family: Verdana, Geneva, sans-serif;
+				  line-height: 2em;
+				  background-color:#222;
+				  color:white;
+				}
+		</style>
+	</head>
+	<body>
+		<div class="grid">
+			<div class="item h" style="--color:#3E989B;"><p>h</p></div><!--header-->
+			<div class="item l" style="--color:#6DB465;"><p>l</p></div><!--left-->
+			<div class="item c" style="--color:#F2C14E;"><p>c</p></div><!--center-->
+			<div class="item r" style="--color:#F78154;"><p>r</p></div><!--right-->
+			<div class="item f" style="--color:#C87694;"><p>f</p></div><!--footer-->
+		</div>
+	</body>
+</html>

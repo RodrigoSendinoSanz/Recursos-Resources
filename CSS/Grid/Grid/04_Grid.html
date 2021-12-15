@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Grid</title>
+		<style type="text/css">
+			.contenedor{
+			   display: grid;
+			   height: 100vh; /*ocupa el alto de la pantalla*/
+			   grid-template-columns: repeat(3, 1fr); /*los elementos ocuparan 3 columnas*/
+			   grid-template-rows: repeat(2, 1fr);  /*los elementos ocuparan 2 filas*/
+			 }
+			 
+
+			.item{
+			   border: 3px solid #ffffff;
+			   padding: 1rem;
+			   font-family: arial;
+			   color: white;
+			   text-align: center;
+			   background: linear-gradient(135deg, rgb(97, 234, 222) 0%, rgb(30, 168, 255) 100%);
+			   display: flex;
+			   justify-content: center;
+			   align-items: center;
+			   font-size: 2rem;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="contenedor">
+			<div class="item">ITEM 1</div>
+			<div class="item">ITEM 2</div>
+			<div class="item">ITEM 3</div>
+			<div class="item">ITEM 4</div>
+			<div class="item">ITEM 5</div>
+			<div class="item">ITEM 6</div>
+		</div>
+
+	</body>
+</html>

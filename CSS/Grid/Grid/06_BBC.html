@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>BBC</title>
+		<style type="text/css">
+			article{
+				color: white;
+			}
+			#a1, #a6{
+				background-color: red;
+			}
+			#a2, #a7{
+				background-color: orangered;
+			}
+			#a3{
+				background-color: yellowgreen;
+			}
+			#a4, #a8{
+				background-color: blue;
+			}
+			#a5{
+				background-color: violet;
+			}
+			.header {
+			  display: grid;
+			  grid-template-columns: 2fr 1fr 1fr;
+			  grid-template-rows: 10em 10em;
+			  grid-gap: 1em;
+			  width: 100%;
+			}
+
+			.news {
+			  display: grid;
+			  grid-template-columns: repeat( 3, 1fr );
+			  grid-template-rows: 10em;
+			  grid-gap: 1em;
+			}
+
+			.header article:first-child {
+			  grid-row-start: 1;
+			  grid-row-end: 3;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Welcome to BBC.com</h1>
+	    <div class="header">
+	      <article id="a1">Last Trump rival quits Republican race</article>
+	      <article id="a2">Real Madrid 1-0 Manchester City (agg 1-0)</article>
+	      <article id="a3">The dying art of headhunting tattoos</article>
+	      <article id="a4">Reinventing China's hated 'abortion police'</article>
+	      <article id="a5">Six reasons the election will make history - no matter who wins</article>
+	    </div><!-- .header -->
+
+	    <h2>News</h2>
+	    <div class="news">
+	      <article id="a6">Canada wildfire threatens entire city</article>
+	      <article id="a7">Addiction doctor made Prince 911 call</article>
+	      <article id="a8">Syria truce 'extended to Aleppo'</article>
+	    </div><!-- .news -->
+
+	</body>
+</html>
