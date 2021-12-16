@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Main {
 	public static void main(String[] args) throws Exception {
-	    int i=0,cantidad=20,rango=122;
+	    int i=0,cantidad=10,rango=12;
 	    int []array = new int[cantidad];
 	    boolean cambios =false;
 
