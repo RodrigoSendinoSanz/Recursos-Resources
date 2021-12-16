@@ -1,8 +1,13 @@
-package NorRepetidos;
+package NoRepetidos;
+
+import java.util.Arrays;
 
 public class Main {
+	public static void main(String[] args) throws Exception {
     int i=0,cantidad=10,rango=10;
-    int array[] = new int[cantidad];
+    int []array = new int[cantidad];
+
+    
     array[i] =(int)(Math.random()*rango);
         for(i=1;i<cantidad;i++){
             array[i] =(int)(Math.random()*rango);
