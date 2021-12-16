@@ -25,10 +25,10 @@ public class Main {
             System.out.println("\n"
         		+ "Array metodo toString: "+Arrays.toString(array));
         		
-        for(int x=0; x < array.length ;x++){
+		for(int x=0; x < array.length ;x++){
 
-            System.out.print(" "+array[x]+" // ");
-            
-        }
+		    System.out.print(" "+array[x]+" // ");
+
+		}
 	}
 }
