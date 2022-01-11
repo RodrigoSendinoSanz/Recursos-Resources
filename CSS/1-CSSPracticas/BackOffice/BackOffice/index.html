@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BackOffice</title>
+</head>
+<div>
+    <div class="conatiner">
+          <div class="navegation">
+              <ul>
+                  <li>
+                      <a href="#">
+                        <span class="icon"><i class="fab fa-pied-piper-square"></i></span>
+                        <span class="title"><h2>Nombre marca</h2></span>
+                      </a>
+                  </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="title">Dasboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-users"></i></span>
+                        <span class="title">Clientes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <span class="title">Mensajes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="far fa-question-circle"></i></span>
+                        <span class="title">Ayuda</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="title">Opciones</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-lock"></i></span>
+                        <span class="title">Contraseña</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+              </ul>
+          </div>
+    </div>
+    <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Buscar aqui">
+                        <i class="fas fa-search"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="./img/pexels-daniel-xavier-1212984.jpg" width=50px> 
+                </div>
+            </div>
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,042</div>
+                        <div class="cardName">Visitas diarias</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="far fa-eye"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Compras</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">27</div>
+                        <div class="cardName">Comentarios</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">400€</div>
+                        <div class="cardName">Ganancias</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-euro-sign"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Ultimos pedidos</h2>
+                        <a href="#" class="btn">Ver todos</a>
+                    </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Precio</td>
+                                    <td>Pago</td>
+                                    <td>Estado</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mueble de baño azul</td>
+                                    <td>100€</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status entregado">Entregado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ventana abatible</td>
+                                    <td>400€</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status pendiente">Pendiente</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Estufa pellets</td>
+                                    <td>160€</td>
+                                    <td>Aplazado</td>
+                                    <td><span class="status devuelto">Devuelto</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Bañera Jacuzzi</td>
+                                    <td>7000€</td>
+                                    <td>Aplazado</td>
+                                    <td><span class="status enprogreso"> En progreso</span></td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>Ventana abatible</td>
+                                    <td>400€</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status pendiente">Pendiente</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Mueble de baño azul</td>
+                                    <td>100€</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status entregado">Entregado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Estufa pellets</td>
+                                    <td>160€</td>
+                                    <td>Aplazado</td>
+                                    <td><span class="status entregado">Entregado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Bañera Jacuzzi</td>
+                                    <td>7000€</td>
+                                    <td>Aplazado</td>
+                                    <td><span class="status enprogreso"> En progreso</span></td>
+                                </tr>
+                              
+                            </tbody>
+                        </table>
+                </div>
+                <div class="recentCustomers">
+                        <div class="cardHeader">
+                            <h2>Ultimos clientes</h2>
+                        </div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/pexels-andrea-piacquadio-762020.jpg" alt=""></div></td>
+                                    <td><h4>Andrea <br><span>Italia</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/pexels-anthony-shkraba-7167028.jpg" alt=""></div></td>
+                                    <td><h4>Jose <br><span>España</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/pexels-anthony-shkraba-7985145.jpg" alt=""></div></td>
+                                    <td><h4>Xian <br><span>UK</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/pexels-creation-hill-1681010.jpg" alt=""></div></td>
+                                    <td><h4>Marcos <br><span>Brasil</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/pexels-mikhail-nilov-9783907.jpg" alt=""></div></td>
+                                    <td><h4>Giorgina <br><span>Lituania</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/pexels-pixabay-220453.jpg" alt=""></div></td>
+                                    <td><h4>Andersen <br><span>Suiza</span></h4></td>
+                                </tr>
+
+                                
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+
+    </div>
+    </div>
+</div>
+
+    <script>
+        function toggleMenu() {
+            let toggle = document.querySelector('.toggle');
+            let navegation = document.querySelector('.navegation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active');
+            navegation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/895e73d5cd.js" crossorigin="anonymous"></script>
+</body>
+</html>

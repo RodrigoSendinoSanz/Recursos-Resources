@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>BackOfficePlus</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navegation">
+            <ul>
+                <li>
+                    <a href="#">
+                      <span class="icon"><img src="./img/logo.png"></span>
+                      <span class="title"><h2>Nombre Marca</h2></span>
+                    </a>
+                </li>
+              <li class="hovered">
+                  <a href="" onclick="window.location.reload(true)" >
+                      <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                      <span class="title">Dasboard</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                      <span class="title">Clientes</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="icon"><ion-icon name="chatbox-outline"></ion-icon></span>
+                      <span class="title">Mensajes</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                      <span class="title">Ayuda</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                      <span class="title">Opciones</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                      <span class="title">Contraseña</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                      <span class="title">Sign Out</span>
+                  </a>
+              </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Buscar aqui">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="./img/user.jpg"> 
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,042</div>
+                        <div class="cardName">Visitas diarias</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Compras</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">27</div>
+                        <div class="cardName">Comentarios</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">400€</div>
+                        <div class="cardName">Ganancias</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="graficos">
+                <div class="caja">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="caja">
+                    <canvas id="ganancias"></canvas>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Ultimos pedidos</h2>
+                        <a href="#" class="btn">Ver todos</a>
+                    </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Precio</td>
+                                    <td>Pago</td>
+                                    <td>Estado</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mueble de baño azul</td>
+                                    <td>100€</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status entregado">Entregado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ventana abatible</td>
+                                    <td>400€</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status pendiente">Pendiente</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Estufa pellets</td>
+                                    <td>160€</td>
+                                    <td>Aplazado</td>
+                                    <td><span class="status devuelto">Devuelto</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Bañera Jacuzzi</td>
+                                    <td>7000€</td>
+                                    <td>Aplazado</td>
+                                    <td><span class="status enprogreso"> En progreso</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Chimenea Ch12</td>
+                                    <td>600€</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status pendiente">Pendiente</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ventana abatible</td>
+                                    <td>400€</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status pendiente">Pendiente</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Mueble de baño azul</td>
+                                    <td>100€</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status entregado">Entregado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Bañera Jacuzzi</td>
+                                    <td>7000€</td>
+                                    <td>Aplazado</td>
+                                    <td><span class="status enprogreso"> En progreso</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Chimenea Ch12</td>
+                                    <td>600€</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status pendiente">Pendiente</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Mueble de baño azul</td>
+                                    <td>100€</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status entregado">Entregado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ventana abatible</td>
+                                    <td>400€</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status pendiente">Pendiente</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Mueble de baño azul</td>
+                                    <td>100€</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status entregado">Entregado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Estufa pellets</td>
+                                    <td>160€</td>
+                                    <td>Aplazado</td>
+                                    <td><span class="status entregado">Entregado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Bañera Jacuzzi</td>
+                                    <td>7000€</td>
+                                    <td>Aplazado</td>
+                                    <td><span class="status enprogreso"> En progreso</span></td>
+                                </tr>
+                              
+                            </tbody>
+                        </table>
+                </div>
+                <div class="recentCustomers">
+                        <div class="cardHeader">
+                            <h2>Ultimos clientes</h2>
+                        </div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/img1.jpg" alt=""></div></td>
+                                    <td><h4>Andrea <br><span>Italia</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/img2.jpg" alt=""></div></td>
+                                    <td><h4>Jose <br><span>España</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/img3.jpg" alt=""></div></td>
+                                    <td><h4>Xian <br><span>UK</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/img4.jpg" alt=""></div></td>
+                                    <td><h4>Marcos <br><span>Brasil</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/img5.jpg" alt=""></div></td>
+                                    <td><h4>Giorgina <br><span>Lituania</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/img6.jpg" alt=""></div></td>
+                                    <td><h4>Andersen <br><span>Suiza</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/img7.jpg" alt=""></div></td>
+                                    <td><h4>Maria <br><span>EEUU</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/img8.jpg" alt=""></div></td>
+                                    <td><h4>Juan <br><span>Suiza</span></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="60px"><div class="imgBx"><img src="./img/img9.jpg" alt=""></div></td>
+                                    <td><h4>Sara <br><span>España</span></h4></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <script src="./js/graficos.js"></script>
+    <script>
+                    let toggle = document.querySelector('.toggle');
+                    let navegation = document.querySelector('.navegation');
+                    let main = document.querySelector('.main');
+
+                    toggle.onclick = function(){
+                        navegation.classList.toggle('active');
+                        main.classList.toggle('active');
+                    }
+
+
+
+
+        let list = document.querySelectorAll('.navegation li');
+
+        function activeLink() {
+            list.forEach((item) => 
+            item.classList.remove('hovered'));
+            this.classList.add('hovered');	
+        }	
+        list.forEach((item) => 
+            item.addEventListener('mouseover', activeLink));
+    </script>
+</body>
+</html>

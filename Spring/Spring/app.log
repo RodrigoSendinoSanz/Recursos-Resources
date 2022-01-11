@@ -1,0 +1,38 @@
+2021-12-27 15:54:49.722  INFO 14648 --- [main] com.rodrigo.core.CursoSpringApplication  : Starting CursoSpringApplication using Java 17.0.1 on DESKTOP-56GABVE with PID 14648 (C:\Users\Win10\Desktop\Spring Practicas\Spring Boot\CursoSpring\target\classes started by Win10 in C:\Users\Win10\Desktop\Spring Practicas\Spring Boot\CursoSpring)
+2021-12-27 15:54:49.725  INFO 14648 --- [main] com.rodrigo.core.CursoSpringApplication  : No active profile set, falling back to default profiles: default
+2021-12-27 15:54:50.311  INFO 14648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2021-12-27 15:54:50.317  INFO 14648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-27 15:54:50.318  INFO 14648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 15:54:50.367  INFO 14648 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-27 15:54:50.367  INFO 14648 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 610 ms
+2021-12-27 15:54:50.533  INFO 14648 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-27 15:54:50.617  WARN 14648 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8086 is already in use
+2021-12-27 15:54:50.620  INFO 14648 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-12-27 15:54:50.628  INFO 14648 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-27 15:54:50.643 ERROR 14648 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8086 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8086 or configure this application to listen on another port.
+
+2021-12-27 15:55:02.264  INFO 19300 --- [main] com.rodrigo.core.CursoSpringApplication  : Starting CursoSpringApplication using Java 17.0.1 on DESKTOP-56GABVE with PID 19300 (C:\Users\Win10\Desktop\Spring Practicas\Spring Boot\CursoSpring\target\classes started by Win10 in C:\Users\Win10\Desktop\Spring Practicas\Spring Boot\CursoSpring)
+2021-12-27 15:55:02.266  INFO 19300 --- [main] com.rodrigo.core.CursoSpringApplication  : No active profile set, falling back to default profiles: default
+2021-12-27 15:55:02.860  INFO 19300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2021-12-27 15:55:02.867  INFO 19300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-27 15:55:02.868  INFO 19300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-27 15:55:02.916  INFO 19300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-27 15:55:02.916  INFO 19300 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 618 ms
+2021-12-27 15:55:03.085  INFO 19300 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-27 15:55:03.201  INFO 19300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2021-12-27 15:55:03.208  INFO 19300 --- [main] com.rodrigo.core.CursoSpringApplication  : Started CursoSpringApplication in 1.241 seconds (JVM running for 1.753)
+2021-12-27 16:03:26.311  INFO 19300 --- [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.

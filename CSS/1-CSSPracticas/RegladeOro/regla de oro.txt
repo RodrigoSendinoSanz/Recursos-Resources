@@ -1,0 +1,29 @@
+var impor = true;
+precio;
+tiempo;
+calidad;
+
+
+if (precio == sube){
+    tiempo++;
+    calidad++;
+if (precio == baja{
+    tiempo--;
+    calidad--;
+}
+if (tiempo == sube{
+    calidad++;
+    precio--;
+if (tiempo == baja{
+    calidad--;
+    precio++;
+
+} 
+if(calidad sube){
+    tiempo++;
+    precio++;
+}
+if(calidad baja{
+    tiempo--;
+    precio--;
+}

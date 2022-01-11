@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <script src="https://kit.fontawesome.com/895e73d5cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix</title>
+    <!-- ./img/ -->
+</head>
+<body>
+    <header>
+        <a href="#"class="logo"><img src="./img/logo.png"></a>
+        <ul class="navegation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My List</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Lastest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="./img/bg.jpg" class="bg">
+        <div class="content">
+            <img src="./img/name.png" class="movieTitle" alt="movie">
+            <h4>
+                <span>2020</span>
+                <span><i>+12</i></span>
+                <span>1h 55min</span>
+                <span>Action</span>
+            </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Illum enim similique quae quasi magnam possimus, quam inventore soluta culpa laborum sequi alias. 
+                Laboriosam nesciunt porro neque esse necessitatibus at vitae nisi doloribus?</p>
+            <div class="buttons">
+                <a href="#"><i class="fas fa-play"></i> Play</a>
+                <a href="#"><i class="fas fa-plus"></i> Add to list</a>
+            </div>  
+        </div>
+        <a class="play" onclick="tooggleVideo();"><img src="./img/play.png" alt="">Watch trailer</a>
+    </div>
+    <div class="trailer">
+        <video src="./img/trailer.mp4" controls="true"></video>
+        <img src="./img/close.png" class="close" onclick="tooggleVideo();">
+    </div>
+
+    <script>
+        function tooggleVideo(){
+            const trailer = document.querySelector('.trailer');
+            const video = document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+
+    </script>
+
+</body>
+</html>

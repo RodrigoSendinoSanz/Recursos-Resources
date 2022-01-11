@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>Suzuki Bike Web</title>
+</head>
+<body>
+    <section class="main">
+        <header>
+            <a href="#"><img src="./img/logo.png" class="logo"></a>
+            <div class="toggle">
+
+            </div>
+            <ul class="navegation">
+                <li><a href="#">Top Features</a></li>
+                <li><a href="#">Galery</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h2>Ready To <span>Race</span></h2>
+            <a href="#" class="btn">Ride Now</a>
+            <img src="./img/bike.png" class="bike">
+        </div>
+        <div class="slider">
+            <div class="slides active">
+                <h2><span>Engine</span><br>599 cc</h2>
+                <h2><span>Max Speed</span><br>260 Km/h</h2>
+            </div>
+            <div class="slides">
+                <h2><span>Mileage</span><br>14 Kmpl</h2>
+                <h2><span>0-100 Kmph</span><br>4 Seconds</h2>
+            </div>
+            <div class="slides">
+                <h2><span>Wheels</span><br>17-Inch Alloy</h2>
+                <h2><span>Trye Type</span><br>Tubeless</h2>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="sci">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+    <script>
+        //Navegacion
+        const toggle = document.querySelector('.toggle');
+        const navegation = document.querySelector('.navegation');
+        toggle.onclick = function() {
+            toggle.classList.toggle('active');
+            navegation.classList.toggle('active');
+        }
+        //Slider
+        const slides = document.querySelectorAll('.slides');
+        const dot = document.querySelectorAll('.dot');
+
+        function SetActive(i){
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            slides[i].classList.add('active');
+
+            dot.forEach(d => {
+                d.classList.remove('active');
+            });
+            dot[i].classList.add('active');
+        }
+
+        for(let i = 0; i < dot.length; i++){
+            dot[i].addEventListener('click', () => {
+                SetActive(i);
+            });
+        }
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

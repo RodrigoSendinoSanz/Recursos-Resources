@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/895e73d5cd.js" crossorigin="anonymous"></script>
+    <title>Curso Bootstrap</title>
+
+<!--     Botnones dropdown
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    -->
+</head>
+<body>
+
+    <button class="btn btn-primary">Prueba</button>
+    <button class="btn btn-secondary">Prueba</button>
+    <button class="btn btn-success">Prueba</button>
+    <button class="btn btn-info">Prueba</button>
+    <button class="btn btn-warning">Prueba</button>
+    <button class="btn btn-danger">Prueba</button>
+    <button class="btn btn-light">Prueba</button>
+    <button class="btn btn-dark">Prueba</button>
+    <button class="btn btn-link">Prueba</button>
+
+    <hr>
+
+    <a href="#" class="btn  btn-primary">Enlace</a>
+    <button type="submit" class="btn btn-success">Enviar</button>
+    <input class="btn btn-info" type="button" value="Aceptar">
+    <input class="btn btn-primary" type="button" value="Enviar">
+    <input class="btn btn-warning" type="reset" value="Borrar">
+
+    <hr>
+
+    <button type="button" class="btn btn-outline-primary ">OutLine</button>
+    <button type="button" class="btn btn-outline-warning ">OutLine</button>
+    <button type="button" class="btn btn-outline-danger ">OutLine</button>
+    <button type="button" class="btn btn-outline-success ">OutLine</button>
+
+    <hr>
+
+    <button type="button" class="btn btn-primary btn-lg">Grande</button>
+    <button type="button" class="btn btn-primary">Normal</button>
+    <button type="button" class="btn btn-primary btn-sm">Pequeño</button>
+    <br>
+    <br>
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Button</button>
+    </div>
+    <hr>
+
+    <button type="button" class="btn btn-primary btn-lg ">
+        <i class="fab fa-telegram"></i> User
+    </button>
+
+    <hr>
+    <button type="button" class="btn btn-primary active" >Normal</button>
+    <button type="button" class="btn btn-primary disabled">Normal</button>
+    <button type="button" class="btn btn-primary" data-toggle="button">Normal</button>
+    
+    <hr>
+<p>Para que funcionen los  dropdown cambiar la version (Comentada en head)</p>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Elegir
+        </button>
+        <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+    </div>
+
+
+    <hr>
+
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger">Action</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+    </div>
+
+
+    <hr>
+
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="btn-group">
+        <button class="btn btn-primary">Izquierda</button>
+        <button class="btn btn-warning">Centro</button>
+        <button class="btn btn-danger">Derecha</button>
+    </div>
+
+    <div class="btn btn-toolbar">
+        <div class="btn-group">
+            <button class="btn btn-primary">1</button>
+            <button class="btn btn-warning">2</button>
+            <button class="btn btn-danger">3</button>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-primary">4</button>
+            <button class="btn btn-warning">5</button>
+            <button class="btn btn-danger">6</button>
+        </div>
+        <button class="btn btn-danger">7</button>
+    </div>
+
+    <hr>    
+
+    <div class="btn-group-vertical">
+        <button class="btn btn-primary">Izquierda</button>
+        <button class="btn btn-warning">Centro</button>
+        <button class="btn btn-danger">Derecha</button>
+    </div>     
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
