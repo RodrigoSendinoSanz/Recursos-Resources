@@ -1,0 +1,15 @@
+
+public class MiClaseGenerica <T,T2{
+
+	T x;
+	T2 y;
+	
+	MiClaseGenerica(T x,T2 y){
+		this.x=x;
+		this.y=y;
+	}
+	
+	public T getValor() {
+		return x;
+	}
+}

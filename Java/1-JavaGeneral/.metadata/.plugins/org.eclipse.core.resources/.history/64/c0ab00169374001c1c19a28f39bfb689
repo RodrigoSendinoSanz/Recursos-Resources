@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		MiClaseGenerica<Integer> miInt = new MiClaseGenerica <> (1);
+		MiClaseGenerica<Double>  miDouble = new MiClaseGenerica <> (3.14);
+		MiClaseGenerica<Character>  miChar = new MiClaseGenerica <> ('$');
+		MiClaseGenerica<String>  miString = new MiClaseGenerica <> ("Hola");
+		
+		ArrayList<String> misAmigos = new ArrayList<>();
+		
+		/*
+		MiIntegerClass miInt = new MiIntegerClass(1);
+		MiDoubleClass miDouble = new MiDoubleClass(3.14);
+		MiCharacterClass miChar = new MiCharacterClass('$');
+		MiStringClass miString = new MiStringClass("Hola");
+		*/
+		System.out.println(miInt.getValor());
+		System.out.println(miDouble.getValor());
+		System.out.println(miChar.getValor());
+		System.out.println(miString.getValor());
+	}
+}

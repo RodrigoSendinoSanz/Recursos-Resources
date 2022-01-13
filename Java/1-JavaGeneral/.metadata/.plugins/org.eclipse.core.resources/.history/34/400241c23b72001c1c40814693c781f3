@@ -1,0 +1,14 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// JTextField = es un comoponete que se usa para añadir poner u obtener texto
+		
+		              //new MiFrame();
+		MiFrame frame = new MiFrame();
+		
+		
+
+	}
+
+}

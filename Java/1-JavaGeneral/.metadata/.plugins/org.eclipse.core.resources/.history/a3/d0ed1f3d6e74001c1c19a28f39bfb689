@@ -1,0 +1,55 @@
+
+
+
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+ 
+
+
+public class MiFrame extends JFrame{
+
+
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+
+
+	MiPanel panel;
+	
+
+	MiFrame(){
+
+		panel = new MiPanel();
+		
+		
+		
+		this.setTitle("2D Graficos");
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		this.add(panel);
+		this.pack();
+		this.setLocationRelativeTo(null);
+		this.setSize(500,500);
+		this.setVisible(true);
+	}
+
+
+	
+
+
+}
+
+
+
+
+
+
+
+

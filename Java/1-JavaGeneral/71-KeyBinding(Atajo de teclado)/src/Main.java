@@ -1,0 +1,19 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		/* Atajos de teclado
+		              vincular una acción a una pulsación de tecla
+		              no es necesario que haga clic en un componente para enfocarlo
+		              todos los componentes de Swing usan atajos de teclado
+		              mayor flexibilidad en comparación con KeyListeners
+		              puede asignar pulsaciones de teclas a componentes individuales de Swing
+		              más difícil de utilizar y configurar :(
+		 */
+
+		
+		@SuppressWarnings("unused")
+		Juego juego = new Juego();
+	}
+
+}

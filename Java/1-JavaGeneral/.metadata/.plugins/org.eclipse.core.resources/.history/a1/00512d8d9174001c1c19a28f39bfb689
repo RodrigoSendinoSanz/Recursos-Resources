@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		MiIntegerClass miInt = new MiIntegerClass(1);
+		MiDoubleClass miDouble = new MiDoubleClass(3.14);
+		MiCharacterClass miChar = new MiCharacterClass('$');
+		MiStringClass miString = new MiStringClass("Hola");
+		
+		
+		
+	}
+}

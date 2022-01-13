@@ -1,0 +1,67 @@
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+import javax.swing.Timer;
+
+public class MiPanel extends JPanel implements ActionListener{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	
+	final int PANEL_ANCHO = 500;
+	final int PANEL_ALTO = 500;
+	Image alien;
+	Image fondoImagen;
+	Timer contador;
+	int xVelocidad = 2;
+	int yVelocidad = 1;
+	int x = 0;
+	int y = 0;
+	
+	
+	MiPanel() {
+		this.setPreferredSize(new Dimension(PANEL_ANCHO,PANEL_ALTO ));
+		this.setBackground(Color.black);
+		alien = new  ImageIcon("alien.png").getImage();
+		fondoImagen = new  ImageIcon("space.png").getImage();
+		contador = new Timer(10, this);
+		contador.start();
+	}
+
+	public void paint(Graphics g) {
+		
+		super.paint(g);//esto pinta el fondo
+		
+		Graphics2D g2d = (Graphics2D)g; 
+		
+		g2d.drawImage(fondoImagen, 0, 0, null);
+		g2d.drawImage(alien, x, y, null);
+	}
+	
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		if (x>=PANEL_ANCHO-alien.getWidth(null) || x<0) {
+			xVelocidad = xVelocidad*-1;
+		}
+		x = x+xVelocidad;
+		
+		if (y>=PANEL_ALTO-alien.getHeight(null) || y<0) {
+			yVelocidad = yVelocidad*-1;
+		}
+		y = y+yVelocidad;
+		repaint();
+	}
+
+}

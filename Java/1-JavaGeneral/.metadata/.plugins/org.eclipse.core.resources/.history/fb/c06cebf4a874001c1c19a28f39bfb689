@@ -1,0 +1,29 @@
+
+public class Main {
+
+	public static void main(String[] args) throws InterruptedException {
+		/*
+		 * multihilo: Proceso de ejecutar varios subprocesos simultáneamente
+                     Ayuda a la máxima utilización de la CPU
+                     Los hilos son independientes, no afectan la ejecución de otros hilos
+                     Una excepción en un hilo no interrumpirá otros hilos
+                     útil para atender múltiples clientes, juegos multijugador o otros mutamente independientes
+		 * 
+		 * 
+		 * */
+		
+		//2 formas de crear hilos
+		
+		MiHilo hilo1 = new MiHilo();
+		
+		MiRunnable run1 = new MiRunnable();//con esta forma puedes extender otras clases
+		Thread hilo2 = new Thread(run1);
+		
+		hilo1.start();
+		hilo1.join(3000);//espera a que el hilo muera para iniciarse
+		hilo2.start();
+		
+		//System.out.println(1/0);
+	}
+
+}

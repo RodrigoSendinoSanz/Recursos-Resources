@@ -1,0 +1,10 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// JColorChooset = es un mecanismo de la GUI para elegir colores
+		
+		new MiFrame();
+
+	}
+}

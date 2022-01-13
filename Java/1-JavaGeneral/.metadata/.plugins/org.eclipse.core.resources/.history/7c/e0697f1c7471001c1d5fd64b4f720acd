@@ -1,0 +1,12 @@
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// JOptionPane - un pop up con una caja de dialogo en la cual el usuario eligira un valor o informara de algo
+		
+		
+
+	}
+
+}

@@ -1,0 +1,25 @@
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// JOptionPane - un pop up con una caja de dialogo en la cual el usuario eligira un valor o informara de algo
+										//Mensaje, titulo y tipo
+		/*
+		JOptionPane.showMessageDialog(null, "Texto de informacion", "Titulo", JOptionPane.PLAIN_MESSAGE);
+		
+		JOptionPane.showMessageDialog(null, "Texto de informacion", "Titulo", JOptionPane.INFORMATION_MESSAGE);
+		
+		JOptionPane.showMessageDialog(null, "Texto de informacion", "Titulo", JOptionPane.QUESTION_MESSAGE);
+		
+		JOptionPane.showMessageDialog(null, "Texto de informacion", "Titulo", JOptionPane.WARNING_MESSAGE);
+
+		JOptionPane.showMessageDialog(null, "Texto de informacion", "Titulo", JOptionPane.ERROR_MESSAGE);
+		*/
+		while (true) {
+			JOptionPane.showMessageDialog(null, "Texto de informacion", "Titulo", JOptionPane.WARNING_MESSAGE);
+		}
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+import java.awt.Dimension;
+import java.awt.Image;
+
+import javax.swing.JPanel;
+
+public class MiPanel extends JPanel{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	
+	final int PANEL_ANCHO = 500;
+	final int PANEL_ALTO = 500;
+	Image alien;
+	Image fondoImagen;
+	int xVelocidad = 1;
+	int yVelocidad = 1;
+	int x = 0;
+	int y = 0;
+	
+	
+	MiPanel() {
+		this.setPreferredSize(new Dimension(PANEL_ANCHO,PANEL_ALTO ));
+	}
+
+}

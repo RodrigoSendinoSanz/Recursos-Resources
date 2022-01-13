@@ -1,0 +1,11 @@
+import java.io.Serializable;
+
+public class Usuario implements Serializable{
+
+		String nombre;
+		String contra;
+		
+		public void saludar() {
+			System.out.println("Hola "+nombre);
+		}
+}

@@ -1,0 +1,10 @@
+
+public class MiCharacterClass {
+	Character x;
+	MiCharacterClass(Character x){
+		this.x=x;
+	}
+	public Character getValue() {
+		return x;
+	}
+}

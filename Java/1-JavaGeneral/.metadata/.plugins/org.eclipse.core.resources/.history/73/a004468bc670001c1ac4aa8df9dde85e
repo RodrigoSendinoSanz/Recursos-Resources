@@ -1,0 +1,36 @@
+import java.awt.Color;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// JPanel = es un componente de la GUI que contiene a otros componentes
+		
+		JPanel panelRojo = new JPanel();
+		panelRojo.setBackground(Color.red);
+		panelRojo.setBounds(0, 0, 250, 250);
+		
+		JPanel panelBlue = new JPanel();
+		panelBlue.setBackground(Color.blue);
+		panelBlue.setBounds(250, 0, 250, 250);
+		
+		JPanel panelAmarillo= new JPanel();
+		panelAmarillo.setBackground(Color.yellow);
+		panelAmarillo.setBounds(0, 0, 250, 250);
+		
+		
+		JFrame frame = new JFrame();
+		frame.setSize(750,750);
+		frame.setLayout(null);
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		frame.add(panelRojo);
+		frame.add(panelBlue);
+
+
+	}
+
+}

@@ -1,0 +1,25 @@
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//GUI Graphical User Interface
+		String name =JOptionPane.showInputDialog("Pon tu nombre");
+		JOptionPane.showMessageDialog(null, "Hola "+name);
+		
+		int age = Integer.parseInt(JOptionPane.showInputDialog("Pon tu edad"));
+		JOptionPane.showMessageDialog(null, "Tu tienes "+age+" años");
+		
+		double altura = Double.parseDouble(JOptionPane.showInputDialog("Pon tu altura"));
+		JOptionPane.showMessageDialog(null, "Tu mides "+altura+" cm");
+
+		JOptionPane.showMessageDialog(null, "Suma los numeros");
+		
+		int num1 = Integer.parseInt(JOptionPane.showInputDialog("Numero 1"));
+		int num2 = Integer.parseInt(JOptionPane.showInputDialog("Numero 2"));
+		int suma =num1+num2;
+		
+		JOptionPane.showMessageDialog(null, "Este es el resultado: "+suma);
+	}
+
+}

@@ -1,0 +1,52 @@
+import java.awt.FlowLayout;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+
+
+public class MiFrame2 extends JFrame implements ActionListener{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@SuppressWarnings("rawtypes")
+	JComboBox menu;
+	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	MiFrame2(){
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLayout(new FlowLayout());
+		
+		String[] animales = {"perro","gato","pajaro"};//Si quisierar poner numero int habria que usar Integer en vez de int es decir la clase envolvente
+		
+		menu = new JComboBox(animales);
+		menu.addActionListener(this);
+		//menu.setEditable(true); se puede escribir en el
+		//System.out.println(menu.getItemCount());// cuenta los items que hay
+		//menu.addItem("caballo");//añadir items
+		//menu.insertItemAt("pez", 2);//añade una opcion en el indice especificado
+		//menu.setSelectedIndex(2);//pajaro selecionado
+		//menu.removeItem("gato");;//quitar por nombre
+		//menu.removeItemAt(1);// quitar po indice
+		//menu.removeAllItems();//quita todos los items
+		
+		this.add(menu);
+		this.pack();
+		this.setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource()==menu) {
+			System.out.println(menu.getSelectedItem());//texto
+			//System.out.println(menu.getSelectedIndex());//numero
+		}
+		
+	}
+
+}

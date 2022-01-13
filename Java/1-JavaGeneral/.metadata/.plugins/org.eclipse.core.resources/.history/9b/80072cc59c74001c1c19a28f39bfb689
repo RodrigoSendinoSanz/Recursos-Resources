@@ -1,0 +1,46 @@
+import java.util.Calendar;
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class Main {
+
+	public static void main(String[] args) {
+		/*
+		Timer =
+		Una instalación para hilos para programar tareas.
+		para ejecución futura en un subproceso en segundo plano
+
+		
+		TimerTask =
+		Una tarea que se puede programar para una sola vez
+		o ejecución repetida por un temporizador
+		 */
+		
+		Timer contador = new Timer();
+		
+		TimerTask tarea = new TimerTask() {
+			
+			@Override
+			public void run() {
+				System.out.println("Tarea completada");
+				
+			}
+		};
+		
+		Calendar fecha = Calendar.getInstance();
+		fecha.set(Calendar.YEAR, 2022);
+		fecha.set(Calendar.MONTH, Calendar.JANUARY);
+		fecha.set(Calendar.DAY_OF_MONTH, 13);
+		fecha.set(Calendar.HOUR_OF_DAY, 19);
+		fecha.set(Calendar.MINUTE, 14);
+		fecha.set(Calendar.SECOND, 0);
+		fecha.set(Calendar.MILLISECOND, 0);
+		
+		contador.schedule(tarea, fecha.getTime());
+		
+		//contador.schedule(tarea, 3000); 3 segundos
+		
+		
+	}
+
+}

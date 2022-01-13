@@ -1,0 +1,20 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		/*
+		 * multiproceso Proceso de ejecutar varios subprocesos simultáneamente
+                     Ayuda a la máxima utilización de la CPU
+                     Los hilos son independientes, no afectan la ejecución de otros hilos
+                     Una excepción en un hilo no interrumpirá otros hilos
+                     útil para atender múltiples clientes, juegos multijugador o otros mutamente independientes
+		 * 
+		 * 
+		 * */
+
+		MiHilo hilo1 = new MiHilo();
+		
+		
+	}
+
+}

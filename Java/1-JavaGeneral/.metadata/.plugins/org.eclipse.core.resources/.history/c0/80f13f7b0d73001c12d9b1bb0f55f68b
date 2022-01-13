@@ -1,0 +1,45 @@
+import java.awt.*;
+import javax.swing.*;
+
+
+public class BarraProgreso {
+
+	JFrame frame;
+	JProgressBar barra;
+	
+	BarraProgreso(){
+		barra = new JProgressBar(0,500);
+		barra.setBounds(0,0,420,50);
+		barra.setStringPainted(true);
+		barra.setFont(new Font("MV Boli", Font.BOLD, 25));
+		barra.setForeground(Color.red);
+		barra.setBackground(Color.black);
+		
+		
+		frame = new JFrame();
+		frame.add(barra);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(420,420);
+		frame.setLayout(null);
+		frame.setVisible(true);
+		
+		llenar();
+	}
+	public void llenar() {
+		int cont = 500;
+		while(cont>0){
+			barra.setValue(cont);
+			barra.setString(cont+"/500 HP");
+			try {
+				Thread.sleep(20);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			cont-=1;
+		}
+		barra.setString("Has muerto");
+		barra.setBackground(Color.DARK_GRAY);
+	}
+	
+}

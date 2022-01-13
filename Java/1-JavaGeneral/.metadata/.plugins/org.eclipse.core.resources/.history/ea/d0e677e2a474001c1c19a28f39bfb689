@@ -1,0 +1,64 @@
+
+public class Main {
+
+	public static void main(String[] args) throws InterruptedException {
+		/*
+	     Hilo = Un hilo de ejecución en un programa (algo así como una CPU virtual)
+	     La JVM permite que una aplicación tenga múltiples subprocesos ejecutándose simultáneamente
+	     Cada hilo puede ejecutar partes de su código en paralelo con el hilo principal
+	     Cada hilo tiene una prioridad.
+	     Los subprocesos con mayor prioridad se ejecutan con preferencia en comparación con los subprocesos con menor prioridad
+	    
+	     La máquina virtual de Java continúa ejecutando subprocesos hasta que ocurra cualquiera de los siguientes
+	     1. Se ha llamado al método de salida de la clase Runtime
+	     2. Todos los hilos de usuarios han muerto
+	    
+	     Cuando se inicia una JVM, hay un hilo que llama al método principal
+	     Este hilo se llama "principal"
+	    
+	     El subproceso Daemon es un subproceso de baja prioridad que se ejecuta en segundo plano para realizar tareas como la recolección de basura
+			JVM finaliza cuando todos los subprocesos de usuario (subprocesos que no son demonios) finalizan su ejecución
+	     */
+		
+    	//System.out.println(Thread.activeCount());//Numero de hilos corriendo
+    	
+    	//Thread.currentThread().setName("MAIN");//cambiar el nombre del hilo
+    	//System.out.println(Thread.currentThread().getName());//Nombre de los hilos
+    	
+    	//Thread.currentThread().setPriority(10);//cuanto mas alto sea mas prioridad tiene 1-10
+    	//System.out.println(Thread.currentThread().getPriority());
+    	
+    	//System.out.println(Thread.currentThread().isAlive());//saber si esta vivo true o false
+    	
+		/*
+    	for(int i =3;i>0;i--) {
+    		System.out.println(i);
+    		Thread.sleep(1000);
+    	}
+    	
+    	System.out.println("You are done!");
+    	*/
+    	
+		
+    	MiHilo hilo2 = new MiHilo();
+    	/*
+    	hilo2.setDaemon(true);
+    	System.out.println(hilo2.isDaemon());
+    	*/
+		
+		
+    	//hilo2.start();
+    	
+    	//System.out.println(hilo2.isAlive());
+    	
+    	hilo2.setName("2 hilo");
+    	System.out.println(hilo2.getName());
+    	
+    	//hilo2.setPriority(1);
+    	//System.out.println(hilo2.getPriority());
+    	
+    	//System.out.println(Thread.activeCount());
+    
+	}
+
+}

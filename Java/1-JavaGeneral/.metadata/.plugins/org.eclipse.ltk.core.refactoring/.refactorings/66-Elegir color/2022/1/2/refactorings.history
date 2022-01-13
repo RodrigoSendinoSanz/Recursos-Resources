@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MiFrame.java&apos; to &apos;67-KeyListener/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;66-Elegir color&apos;&#x0D;&#x0A;- Destination element: &apos;67-KeyListener/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;MiFrame.java&apos;" description="Copy compilation unit" destination="=67-KeyListener/src&lt;" element1="/src&lt;{MiFrame.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1641994974268" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,19 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// leer archivos
+		try {
+			FileWriter escribir = new FileWriter("saludo.jpg");//puendes poner la extension que quieras
+			escribir.write("Hola \n Mundo");
+			escribir.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

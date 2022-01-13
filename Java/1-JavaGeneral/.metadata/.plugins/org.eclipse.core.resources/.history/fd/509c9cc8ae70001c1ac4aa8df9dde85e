@@ -1,0 +1,11 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Leer Archivos leer el contenido como una secuencia de caracteres uno por uno read(), cuando devuelve-1 no hay mas datos para leer
+		
+		
+
+	}
+
+}

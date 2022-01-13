@@ -1,0 +1,20 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// Polimofrismo dinamico, tiene muchas formas ,dinamico despues de la compliacion(durante el tiempo de ejecucion)
+				//Un Audi es un coche, un vehiculo y un objeto
+		
+		/*Animal animal = new Perro();
+		Animal animal = new Gato();
+		*/
+
+		
+		Animal animal;
+		
+		
+		
+		
+	}
+
+}

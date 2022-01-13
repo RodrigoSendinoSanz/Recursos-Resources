@@ -1,0 +1,78 @@
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+
+import javax.swing.AbstractAction;
+import javax.swing.Action;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Juego {
+	
+	JFrame frame;
+	JLabel label;
+	
+	
+	Action arribaAction;
+	Action izquierdaAction;
+	Action derechaAction;
+	Action abajoAction;
+	
+	
+	Juego(){
+		frame = new JFrame("Atajos de teclado");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(420,420);
+		frame.setLayout(null);
+		
+		label = new JLabel();
+		label.setBackground(Color.red);
+		label.setBounds(100, 100, 100, 100);
+		label.setOpaque(true);
+		
+		arribaAction = new ArribaAction();
+		izquierdaAction = new IzquierdaAction();
+		derechaAction = new DerechaAction();
+		abajoAction = new AbajoAction();
+		
+		frame.add(label);
+		frame.setVisible(true);
+		
+	}
+	
+	public class ArribaAction extends AbstractAction{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+	}
+	public class IzquierdaAction extends AbstractAction{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+	}
+	public class DerechaAction extends AbstractAction{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+	}
+	public class AbajoAction extends AbstractAction{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+	}
+}

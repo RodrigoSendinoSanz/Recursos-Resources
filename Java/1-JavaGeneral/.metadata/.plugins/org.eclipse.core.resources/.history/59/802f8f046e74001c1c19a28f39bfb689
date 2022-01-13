@@ -1,0 +1,54 @@
+
+
+
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+ 
+
+
+public class MiFrame extends JFrame{
+
+
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	JLabel label;
+
+
+	
+
+	MiFrame(){
+
+		this.setTitle("2D Graficos");
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+		this.setSize(500,500);
+		this.setVisible(true);
+	}
+
+	public void paint(Graphics g) {
+		
+		Graphics2D g2d =(Graphics2D) g;
+		
+		g2d.drawLine(0, 0, 500, 500);
+		
+	}
+	
+
+
+}
+
+
+
+
+
+
+
+

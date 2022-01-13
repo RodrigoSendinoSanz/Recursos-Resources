@@ -1,0 +1,40 @@
+import java.awt.*;
+import javax.swing.*;
+
+
+public class BarraProgreso {
+
+	JFrame frame;
+	JProgressBar barra;
+	
+	BarraProgreso(){
+		barra = new JProgressBar();
+		barra.setBounds(0,0,420,50);
+		barra.setStringPainted(true);
+		
+		
+		
+		frame = new JFrame();
+		frame.add(barra);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(420,420);
+		frame.setLayout(null);
+		frame.setVisible(true);
+		
+		llenar();
+	}
+	public void llenar() {
+		int cont = 0;
+		while(cont<=100){
+			barra.setValue(cont);
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			cont+=10;
+		}
+	}
+	
+}

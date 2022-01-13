@@ -1,0 +1,6 @@
+
+public class Barco extends Vehiculo {
+	public void go() {
+		System.out.println("El coche se sesta moviendo");
+	}
+}

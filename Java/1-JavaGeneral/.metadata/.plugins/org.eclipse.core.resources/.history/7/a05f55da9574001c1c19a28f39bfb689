@@ -1,0 +1,9 @@
+
+public class Usuario {
+		String nombre;
+		String contra;
+		
+		public void saludar() {
+			System.out.println("Hola "+nombre);
+		}
+}

@@ -1,0 +1,36 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+//public class MiFrame extends JFrame implements ActionListener{
+public class MiFrame extends JFrame{
+	JButton boton;
+	MiFrame(){
+		
+		boton = new JButton();
+		
+		boton.setBounds(200,100,100,50);
+		boton.addActionListener(e ->System.out.println("Hi"));
+		boton.setText("Pulsame!");
+		
+		
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLayout(null);
+		this.setSize(500,500);
+		this.setVisible(true);
+		this.add(boton);
+	}
+
+	/*@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource()==boton) {
+			System.out.println("Hi");
+		}
+		
+	}
+	
+	*/
+	
+}

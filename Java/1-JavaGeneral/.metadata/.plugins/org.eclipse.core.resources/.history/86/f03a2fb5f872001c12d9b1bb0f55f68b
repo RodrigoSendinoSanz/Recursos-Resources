@@ -1,0 +1,9 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// JRadioButton = uno o mas botones donde solo pueden estar selecionado un a la vez por grupo
+		new MiFrame();
+	}
+
+}
