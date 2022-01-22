@@ -1,0 +1,23 @@
+body{
+    color: #2222;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-1,.container-1Mouse{
+    margin: 5px auto;
+    padding: 30px;
+    background-color: #ff0000;
+}
+
+.container-2,.container-2Mouse{
+    padding: 30px;
+    background-color: #0077ff;
+}
+
+.inputprueba{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 6px;
+    color: gray;
+    outline: none;
+}

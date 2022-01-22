@@ -1,0 +1,25 @@
+body{
+    color: #2222;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div{
+    background-color: #000000;
+    padding: 20px;
+}
+
+h2{
+    color: #ffffff;
+}
+
+p{
+    color: #ccc;
+}
+
+
+body > div > p{
+    color: #ff0000;
+}
+body > div > p:hover{
+    color: #000000;
+}

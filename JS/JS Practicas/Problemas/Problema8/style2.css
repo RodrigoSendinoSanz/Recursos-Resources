@@ -1,0 +1,31 @@
+body{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: #ededed;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: repeat(4,minmax(min-content,max-content));
+    grid-auto-rows: 50px;
+}
+
+.grid-container .grid-item{
+    border: 2px solid #26a;
+    padding: 10px;
+    margin: 3px;
+    background: #fff;
+}
+.botonconfirmar{
+    background-color: #26a;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+}
+.botonconfirmar:disabled {
+    background: #ccc;
+  }
