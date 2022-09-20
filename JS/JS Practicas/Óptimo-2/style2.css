@@ -1,0 +1,127 @@
+body{
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
+    padding:0;
+    margin:0;
+}
+
+.modal-overlay{
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    opacity: 0;
+    animation:aparecer 1s forwards;
+}
+
+.modal{
+    background: #fff;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    opacity: 0;
+    animation: aparecer 1s forwards;
+}
+
+button{
+    background: #222;
+    color: #fff;
+    margin-bottom: 12px;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #222;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+button:hover{
+    background: #fff;
+    color: #222;
+    border: 1px solid #222;
+}
+
+
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+
+}
+
+@keyframes desaparecer{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+
+.rectangulo{
+    padding: 100px 200px;
+    background: #ccc;
+    margin: 50px;
+    outline: 6px dashed #aaa;
+}
+
+.circulo{
+    padding: 40px;
+    margin: 10px;
+    background: #f00;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.texturas{
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    user-select: none;
+    z-index: 1;
+}
+
+.texturas div{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 6px;
+    user-select: all;
+}
+.texturas div:active{
+    opacity: 0.55;
+}
+
+
+.textura1{
+    background: url(./img/textura1.png);
+    z-index: 10;
+}
+
+.textura2{
+    background: url(./img/textura2.png);
+    z-index: 9;
+}
+
+.textura3{
+    background: url(./img/textura3.png);
+    z-index: 8;
+}
+
+.zona{
+    margin: 10px;
+    background: #ddd;
+    height: 200px;
+}
