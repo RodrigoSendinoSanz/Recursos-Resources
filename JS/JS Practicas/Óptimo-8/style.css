@@ -1,0 +1,98 @@
+body{
+    color: #222;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body, h3, div, p, input{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    padding: 20px;
+    margin-bottom:20px
+}
+
+.publicacion{
+    text-align: left;
+    margin: 20px;
+    color:#555;
+    animation: aparecer 1s forwards 0.5s;
+    opacity: 0;
+}
+.publicacion p{
+    padding: 10px 20px;
+    border-left: 2px solid #48e;
+}
+.publicacion h3{
+    color:#48e;
+    border-bottom: 2px solid #48e;
+    display:inline-block;
+    padding: 0px;
+    margin-bottom:0px;
+}
+
+.megustas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.darlike{
+    border: 2px solid #48e;
+    padding: 8px 12px;
+    background: #fff;
+    color:#48e;
+}
+
+.darlike:hover{
+    border: 2px solid #48e;
+    padding: 8px 12px;
+    background: #48e;
+    color:#fff;
+}
+
+.comentarios {
+    display:flex;
+}
+
+.comentarios input{
+    display:flex;
+    padding: 8px 12px;
+    border:none;
+    background: #48e;
+    color:#fff;
+    outline: none;
+}
+
+.enviar:hover{
+    padding: 8px 12px;
+    background: rgb(45, 97, 175);;
+    color:#fff;
+}
+
+
+.comentarios .comentario{
+    flex-grow: 1;
+    font-weight: 100;
+}
+
+.comentario::placeholder{
+    color:#bcf;
+    text-shadow: none;
+}
+
+.comentarios .enviar{
+    min-width: 60px;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

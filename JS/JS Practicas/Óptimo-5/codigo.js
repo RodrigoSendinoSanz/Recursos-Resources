@@ -37,10 +37,12 @@ document.getElementById("add").addEventListener("click",()=>{
         if (document.querySelector(".posible") != undefined) {
             if (confirm('Hay elementos sin guardar: ¿Quieres continuar?')) {
                 addObjeto({nombre});//{nombre:nombre}
+                nombre.value = "";
                 leerObjetos();
             }
         }else{
             addObjeto({nombre});//{nombre:nombre}
+            nombre.value = "";
             leerObjetos();
         }
     }
